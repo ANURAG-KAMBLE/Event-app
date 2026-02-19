@@ -25,6 +25,9 @@ spring:
 
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
             client-name: GitHub
+jwt:
+  secret: "replace-this-with-a-very-long-random-secret-please-change" 
+  expiration-seconds: 3600
 app:
   frontend:
     url: http://localhost:5173
